@@ -1,4 +1,4 @@
-# Cohort 0 100 devOps 2.0
+# Cohort 0-100 devOps 2.0
 
 # Syllabus 🤖🤖
 
