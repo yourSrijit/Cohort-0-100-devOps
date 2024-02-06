@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    <button onclick="getAnimalDetail()">Click</button>
+    
+    <div id="userdata"></div>
+
+    <script>
+        // 1st way to write fetchinh code 
+
+    //    function getAnimalDetail(){
+    //      fetch("https://fakerapi.it/api/v1/persons")
+    //      .then((response)=>{
+    //          response.json()
+    //          .then((finaldata)=>{
+    //             console.log(finaldata);
+    //          })
+    //      })
+    //    }
+     
+        // 2nd way to write fetchinh code 
+       async function getAnimalDetail(){
+            // asyncgronous call
+         const response=await fetch("https://fakerapi.it/api/v1/persons");
+         const finalData=await response.json();
+         let l=finalData.data.length;
+            document.getElementById("userdata").innerHTML=JSON.stringify(finalData.data[i].firstname);
+  
+         
+            // console.log(finalData);
+        }
+    </script>
+</body>
+</html>
