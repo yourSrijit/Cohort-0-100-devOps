@@ -1,5 +1,6 @@
 # Cohort 0-100 devOps 2.0
 ### All Weeks Content
+## Cohort 0-1 ✅
 - week 1 :
   HTML CSS JS fundamentals
 - week 2 :
@@ -10,7 +11,7 @@
 
 
   
-## Complete 0-1 Syllabus
+## Complete 0-1 Syllabus ✅
 
 ### Foundation
 1. Foundation Javascript, async nature of JS
@@ -56,7 +57,7 @@
 
 ---
 
-## Complete 1-100 Syllabus
+## Complete 1-100 Syllabus ✅
 
 ### Advanced Backend, System Design
 1. Advanced backend communication
