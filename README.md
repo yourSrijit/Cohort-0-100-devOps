@@ -1,7 +1,15 @@
 # Cohort 0-100 devOps 2.0
+### All Weeks Content
+- week 1 :
+  Html Css Js fundamentals
+- week 2 :
+  Async JS, Express baasics,Router,HTTP,Rquest methods
+- Week 3 :
+  Middlewares, Authentication ,JWT Auth, Global Catches,Zod ,MongoDb atlass
 
-# Syllabus 🤖🤖
 
+
+  
 ## Complete 0-1 Syllabus
 
 ### Foundation
