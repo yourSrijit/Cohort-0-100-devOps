@@ -1,9 +1,9 @@
 # Cohort 0-100 devOps 2.0
 #### All Weeks Content
 ### Cohort 0-1 ✅
-- week 1 :
+- Week 1 :
   HTML CSS JS fundamentals
-- week 2 :
+- Week 2 :
   Async JS,Node js,Express basics,Router,HTTP,Rquest methods,Bash Terminal Github, Filter Map Arrow function
 - Week 3 :
   Middlewares, Authentication ,JWT Auth, Global Catches,Zod ,MongoDb atlass ,Dom Introduction
