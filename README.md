@@ -1,6 +1,6 @@
 # Cohort 0-100 devOps 2.0
-### All Weeks Content
-## Cohort 0-1 ✅
+#### All Weeks Content
+### Cohort 0-1 ✅
 - week 1 :
   HTML CSS JS fundamentals
 - week 2 :
