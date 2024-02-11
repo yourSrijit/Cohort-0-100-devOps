@@ -13,7 +13,7 @@ function adminMiddleware(req, res, next) {
     let jwtToken=words[1];
     let response=jwt.verify(jwtToken,JWT_PSW);
     console.log(response.username);
-    if(response && response.username==='admin'){
+    if(response && response.username==='***'){
         next();
     }
     else{
