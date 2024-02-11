@@ -88,5 +88,3 @@ router.get('/purchasedCourses', userMiddleware,async (req, res) => {
 });
 
 module.exports = router
-
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNyaWppdCIsInBhc3N3b3JkIjoic3Jpaml0MTIzIiwiaWF0IjoxNzA3NjMxMDU4fQ._caC12IfPsJx8nbI7wHx-4GSdsTXFomoTE0BBsm5Y7E
