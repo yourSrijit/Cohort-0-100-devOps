@@ -1,6 +1,6 @@
 # Cohort 0-100 devOps 2.0 
-#### All Weeks Content
-### Cohort 0-1 ✅
+
+### Cohort 0-1 Contents 🚀
 - Week 1 :
   HTML CSS JS fundamentals
 - Week 2 :
@@ -12,10 +12,12 @@
 - Week 5:
    React Deep dive,React To-do app
 - Week 6:
-   React Componet
+   React Componet, State variables(useState,useEffect)
 
 
-
+### Cohort 1-100 Contents 🚀
+ 
+ ---
   
 ## Complete 0-1 Syllabus ✅
 
