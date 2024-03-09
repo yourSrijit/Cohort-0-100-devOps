@@ -1,41 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 let count=4;
 function App() {
-  const [todos,setTodos]=useState([
-    {
-      id:1,
-      title:"Gym",
-      description:"Go to Gym"
-    },
-    {
-      id:2,
-      title:"Eat",
-      description:"Time to Eat"
-    },
-    {
-      id:3,
-      title:"Food",
-      description:"Time for Food"
-    }
-])
+  const [todos,setTodos]=useState([]);
+
+
+  useEffect(()=>{
+    setInterval(()=>{
+      fetch("https://sum-server.100xdevs.com/todos")
+      .then(async(res)=>{
+        const json=await res.json();
+        setTodos(json.todos);
+      })
+    },1000)
+  },[]);
   
   return (
     <div>
-        <button onClick={() => {
-        setTodos([
-          ...todos,
-          {
-            id: count++,
-            title: Math.random().toString(),
-            description: Math.random().toString()
-          }
-        ]);
-      }}>Add</button>
-      {todos.map((todo)=>
-       ( <Display title={todo.title} description={todo.description} key={todo.id}></Display>)
-      )}
+    {todos.map((todo)=>
+      <Display title={todo.title} description={todo.description}/>
+    )}
+
     </div>
+
   )
 }
 
