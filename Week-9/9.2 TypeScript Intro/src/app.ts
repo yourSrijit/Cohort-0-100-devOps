@@ -31,12 +31,53 @@
 // Problem 4 ✅- 
 // Create a function that takes another function as input, and runs it after 1 second.
 
-function fun1(fun: () => void){   //if this return integer () => number
-       setTimeout(()=>{
-        fun();
-       },1000)
-}
-function hello(){
-    console.log('Hi srijit');
-}
-fun1(hello);
+// function fun1(fun: () => void){   //if this return integer () => number
+//        setTimeout(()=>{
+//         fun();
+//        },1000)
+// }
+// function hello(){
+//     console.log('Hi srijit');
+// }
+// fun1(hello);
+
+// Step 6 - Interfaces 
+
+// interface User{
+//     firstName:string,
+//     lastName:string,
+//     age:number,
+//     email?:string  //optional argument
+// };
+// function isLegal(user:User): boolean{
+//     if(user.age >18){
+//         return true;
+//     }
+//     return false;
+// }
+
+// isLegal({
+//     firstName:"Srijit",
+//     lastName:"Bera",
+//     age:23
+// })
+
+// interface Person {
+//     name: string;
+//     age: number;
+//     greet(phrase: string): void;
+// }
+
+// class Employee implements Person {
+//     name: string;
+//     age: number;
+
+//     constructor(n: string, a: number) {
+//         this.name = "Srijit";
+//         this.age = 25;
+//     }
+
+//     greet(phrase: string) {
+//         console.log(`${phrase} ${this.name}`);
+//     }
+// }

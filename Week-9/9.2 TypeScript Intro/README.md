@@ -19,5 +19,5 @@ When typescript is compiled down to javascript, you get `type checking` (similar
 - Typescript compiler
 tsc is the official typescript compiler that you can use to convert Typescript code into Javascript
 There are many other famous compilers/transpilers for converting Typescript to Javascript. Some famous ones are - 
-esbuild
-swc
+1. esbuild
+2. swc
