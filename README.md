@@ -13,6 +13,14 @@
    React Deep dive,React To-do app
 - Week 6:
    React Componet, State variables(useState,useEffect)
+- Week 7:
+   React Routing,Prop drilling and Context API ,State Management & Recoil
+- Week 8:
+   Tailwind CSS ,recape for Pytme frontend ,Axios VS Fetch
+- Week 9:
+   React Custom Hooks ,TypeScript Intro
+- Week 10:
+   Postgres SQL intro ,Prisma ,ORM
 
 
 ### Cohort 1-100 Contents 🚀
