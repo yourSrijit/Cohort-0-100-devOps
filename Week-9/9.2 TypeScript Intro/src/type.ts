@@ -37,4 +37,3 @@ type Employee = {
   };
   
 
-  // What is the differance between Interface and Type ⭐⭐⭐⭐

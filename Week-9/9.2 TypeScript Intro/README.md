@@ -21,3 +21,102 @@ tsc is the official typescript compiler that you can use to convert Typescript c
 There are many other famous compilers/transpilers for converting Typescript to Javascript. Some famous ones are - 
 1. esbuild
 2. swc
+
+
+
+
+##  What is the differance between Interface and Type ⭐⭐⭐⭐
+  - 1
+  - using type you can not implement classes
+
+  - using interface you can implement classess
+ -2 
+  - interface can be extends
+  - type can not extend
+
+
+
+## What are types?
+  Very similar to interfaces , types let you aggregate data together.
+```
+type User = {
+	firstName: string;
+	lastName: string;
+	age: number
+}
+```
+
+```
+  1.Union 
+type id= string | number;
+
+function printId(id :id){
+    console.log(`ID : ${id}`);
+}
+printId(101);
+printId("E05");
+```
+
+```
+  2. Intersection
+  What if you want to create a type that has every property of multiple types/ interfaces
+type Employee = {
+    name: string;
+    startDate: Date;
+  };
+  
+  type Manager = {
+    name: string;
+    department: string;
+  };
+  
+  type TeamLead = Employee & Manager;
+  
+  const teamLead: TeamLead = {
+    name: "harkirat",
+    startDate: new Date(),
+    department: "Software developer"
+  };
+  
+```
+
+## Array in TS 
+If you want to access arrays in typescript, it’s as simple as adding a [] annotation next to the type
+
+```
+Given an array of positive integers as input, return the maximum value in the array.
+type ArrayType =number[];
+function maxValue(arr: ArrayType) {
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return max;
+}
+
+console.log(maxValue([1, 2, 3]));
+
+```
+```
+interface User1 {
+	firstName: string;
+	lastName: string;
+	age: number;
+}
+
+function filteredUsers(users: User1[]) {
+    return users.filter(x => x.age >= 18);
+}
+
+console.log(filteredUsers([{
+    firstName: "Srijit",
+    lastName: "Bera",
+    age: 21
+}, {
+    firstName: "Raman",
+    lastName: "Singh",
+    age: 16
+}, ]));
+```
