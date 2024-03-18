@@ -21,7 +21,7 @@ async function createTable() {
             user_id INTEGER REFERENCES users(id),
             done BOOLEAN DEFAULT FALSE
         );
-    `;
+        `;
 
 
     await client.query(createTodosQuery);
