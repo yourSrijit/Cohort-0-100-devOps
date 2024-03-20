@@ -13,6 +13,4 @@ async function createEntries() {
     console.log("Entries created!");
 }
 
-
-
 createEntries();
