@@ -182,4 +182,4 @@ async function getUserAndTodosWithJoin(userId: number) {
 }
 
 getUserAndTodosWithJoin(1)
-````
+```` 
