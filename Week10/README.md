@@ -87,6 +87,7 @@ SQL injection is the placement of malicious code in SQL statements, via web page
 
 #### SQL in Web Pages
 SQL injection usually occurs when you ask a user for input, like their username/userid, and instead of a name/id, the user gives you an SQL statement that you will unknowingly run on your database.
+![sql-injection](https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/003e01c1-43d7-4a3f-becf-3089ce9419ec)
 
 
 ## Get data by Where Clause
@@ -164,6 +165,8 @@ updateTodo(todoIdToUpdate);
 - Left Join
 - Right Join
 by default `Inner Join` is occure if you not mention any join explicitly
+
+![Visual_SQL_JOINS_orig](https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/e2bf3404-2d0f-4c23-b4fb-39debe084b7c)
 
 
 Syntax ->
