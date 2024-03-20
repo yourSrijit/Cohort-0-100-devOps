@@ -9,7 +9,7 @@
 - BOOLEAN
 DATE yyyy-mm-dd
 
----
+
 ## Create Connetion using Client object
 
 ```
@@ -195,4 +195,13 @@ async function getUserAndTodosWithJoin(userId: number) {
 }
 
 getUserAndTodosWithJoin(1)
-```` 
+```
+---
+
+# ORM AND PRISMA
+Object Relational Mapping (ORM) is a technique used in creating a "bridge" between object-oriented programs and, in most cases, relational databases. Put another way, you can see the ORM as the layer that connects object oriented programming (OOP) to relational databases.
+`ORM's let you easily interact with your database without worrying too much about the underlying syntax (SQL language)`
+
+
+
+
