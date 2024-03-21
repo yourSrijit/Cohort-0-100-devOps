@@ -55,18 +55,15 @@ You can update prisma/schema.prisma  to setup what database you want to use.
   lastName   String
 }
 ```
-
 5.Generate Migrations file
 You have created a single schema file. You haven’t yet run the `CREATE TABLE` commands.To run those and create migration files,run 
 ```
 npx prisma migrate dev --name <User-Define-SchemaName>
 ```
-
 6. If you have psql localy , try to explore the tables that prisma  created for you.
 ```
 psql -h localhost -d postgres -U postgres
 ```
-
 7. Create Auto Generated Client
 In Prisma, the auto-generative client refers to the client library that is automatically generated based on your Prisma schema and database schema. When you define your data model using Prisma schema, Prisma generates a client library tailored to your data model.
 
