@@ -1,4 +1,4 @@
-# PostGres SQL
+# PostGres SQL & ORM Prisma ✅
 --- 
 ### Data Types and Check Constrains
 - SERIAL PRiMARY KEY
