@@ -8,4 +8,10 @@ let deleteData=async(id :number)=>{
     console.log(res,"Data is deleted");
 }
 
-deleteData(4);
+let deleteAll=async()=>{
+    let res=await prisma.user.deleteMany({});
+    console.log('All the data is now cleared');
+}
+
+// deleteData(4);
+deleteAll();

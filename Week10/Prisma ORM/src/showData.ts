@@ -13,5 +13,5 @@ const showAll=async()=>{
 }
 
 
-showData("berasrijit02@gamil.com");
+// showData("berasrijit02@gamil.com");
 showAll();

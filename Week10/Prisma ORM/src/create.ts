@@ -19,4 +19,6 @@ async function insertUser(password: string, fName: string, lName: string,email :
   console.log(res);
 }
 
-insertUser( "123456", "Srijit", "bera","berasrijit02@gamil.com");
+insertUser( "1234", "Srijit", "bera","berasrijit02@gamil.com");
+insertUser( "958", "Kamalika", "bera","kamalika456@gamil.com");
+insertUser( "456", "Bishtu", "Saha","bishtu26@gamil.com");

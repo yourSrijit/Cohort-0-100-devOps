@@ -11,7 +11,7 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = "postgresql://neondb_owner:V2w5CLHMgGqN@ep-fancy-dust-a5ck18z5.us-east-2.aws.neon.tech/neondb?sslmode=require"
-  // url ="postgres://bcgohfiu:SsnuORPYEb9OAkwd4PnY-sX03yP0ELzi@kesavan.db.elephantsql.com/bcgohfiu"
+  
 
 }
 

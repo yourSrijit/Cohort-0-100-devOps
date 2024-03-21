@@ -11,6 +11,7 @@ async function updateUser(email: string, {
     fName,
     lName,
 }: UpdateParams) {
+  try{
   const res = await prisma.user.update({
     where: { email },
     data: {
@@ -19,6 +20,11 @@ async function updateUser(email: string, {
     }
   });
   console.log(res);
+}
+catch(error){
+  console.log('User not found');
+ }
+  
 }
 
 updateUser("berasrijit02@gmail.com", {
