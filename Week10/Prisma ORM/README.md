@@ -8,15 +8,20 @@ ORMs are used to abstract the complexities of the underlying database into simpl
 
 ## Why ORM ?
 1.  Simpler syntax (converts objects to SQL queries under the hood)
+<img width="1000" alt="Screenshot_2024-02-03_at_5 46 30_PM" src="https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/a106abe7-18d2-4059-bc4a-7f225a44f5ca">
 
 2.Abstraction that lets you flip the database you are using. Unified API irrespective of the DB
+<img width="1000" alt="Screenshot_2024-02-03_at_6 01 27_PM" src="https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/8aaab629-953d-445f-b13c-1cb48c5041c3">
 
 3.ype safety/Auto completion
- 
+ <img width="1000" alt="Screenshot_2024-02-03_at_6 12 36_PM" src="https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/2477084e-ebd2-40ef-b797-4b879e25a1bf">
+
 4.Automatic migrations
 In case of a simple Postgres app, it’s very hard to keep track of all the commands that were ran that led to the current schema of the table.
 
 ## What is Prisma 
+<img width="1000" alt="Screenshot_2024-02-03_at_6 20 14_PM" src="https://github.com/yourSrijit/Cohort-0-100-devOps/assets/91645620/a4a7390a-7441-4f09-9181-f53f89128a4c">
+
 1. Data model
 In a single file, define your schema. What it looks like, what tables you have, what field each table has, how are rows related to each other.
 2. Automated migrations
@@ -43,7 +48,6 @@ npx prisma init
 ```
 4.Prisma lets you chose between a few databases (MySQL, Postgres, Mongo)
 You can update prisma/schema.prisma  to setup what database you want to use.
-
 5.Create Data Model inside `schema.prisma` file
  like this 
  ```
@@ -55,13 +59,11 @@ You can update prisma/schema.prisma  to setup what database you want to use.
   lastName   String
 }
 ```
-
 5.Generate Migrations file
 You have created a single schema file. You haven’t yet run the `CREATE TABLE` commands.To run those and create migration files,run 
 ```
 npx prisma migrate dev --name <User-Define-SchemaName>
 ```
-
 6. If you have psql localy , try to explore the tables that prisma  created for you.
 ```
 psql -h localhost -d postgres -U postgres
@@ -71,11 +73,9 @@ psql -h localhost -d postgres -U postgres
 In Prisma, the auto-generative client refers to the client library that is automatically generated based on your Prisma schema and database schema. When you define your data model using Prisma schema, Prisma generates a client library tailored to your data model.
 
 This client library provides a set of functions and types that you can use to interact with your database. It abstracts away the low-level details of database communication, allowing you to focus on working with your data in a more intuitive and type-safe way.
-
 ```
 npx prisma generate
 ```
-
 8. Creating App Insert Data
 ```
 import { PrismaClient } from "@prisma/client";
