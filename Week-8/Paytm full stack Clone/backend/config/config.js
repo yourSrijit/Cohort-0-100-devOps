@@ -1,4 +1,2 @@
 let JWT_SECRET="secrectkey"
-module.exports={
-    JWT_SECRET
-}
+module.exports= JWT_SECRET;
