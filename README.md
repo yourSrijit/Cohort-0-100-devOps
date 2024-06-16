@@ -20,7 +20,7 @@
 - Week 9:
    React Custom Hooks ,TypeScript Intro
 - Week 10:
-   Postgres SQL intro ,Prisma ,ORM
+   Postgres SQL intro ,Prisma , ORM
 
 
 ### Cohort 1-100 Contents 🚀
