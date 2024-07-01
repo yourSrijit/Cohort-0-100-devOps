@@ -6,7 +6,7 @@ import { CountContext } from './context';
 
 function App() { 
   const [count,setCount]=useState(0);
-  return (
+  return ( 
   <div>
   <CountContext.Provider value={{count,setCount}}>
     <Count/>
