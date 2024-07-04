@@ -12,12 +12,19 @@ async function authMiddleware(c:any,next:any){
 }
 
 app.get('/',authMiddleware, async (c) => {
-  const body = await c.req.parseBody()
+
+  // return c.text("Hello World"); 
+
+  const body = await c.req.json()
   console.log(body);
   console.log(c.req.header("Authorization"));
   console.log(c.req.query("param"));
 
-  return c.json({msg: "as"})
+  return c.json({msg: "Hi Srijit Good Luck"})
 })
 
+
+// app.post('/user',(c)=>{
+//   return c.text('Hello World');
+// })
 export default app
