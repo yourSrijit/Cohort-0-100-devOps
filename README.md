@@ -22,7 +22,7 @@
 - Week 10:
    Postgres SQL intro ,Prisma , ORM
 - Week 11:
-   Serverless Backend, AWS
+   Serverless Backend, AWS 
 
 ### Cohort 1-100 Contents 🚀
  
