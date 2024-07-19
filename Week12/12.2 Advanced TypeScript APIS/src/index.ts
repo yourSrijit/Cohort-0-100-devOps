@@ -30,3 +30,11 @@ const display1=(user:UpdatePropsOptional)=>{
     display1({
         name:"Srijit"
     })
+
+//  3. Readonly 
+// When you have a configuration object that should not be altered after initialization, making it Readonly ensures its properties cannot be changed.
+const readOnly: Readonly<User>={
+    name:'Srijit',
+    age:22
+}   
+// readOnly.age=20   can not assign again as this is readOnly
