@@ -1,6 +1,6 @@
 # Cohort 0-100 devOps 2.0 
 
-### Cohort 0-1 Contents 🚀 
+### Cohort 0-1 Complete 🚀 
 - Week 1 :
   HTML CSS JS fundamentals
 - Week 2 :
@@ -23,8 +23,11 @@
    Postgres SQL intro ,Prisma , ORM
 - Week 11:
    Serverless Backend, AWS
+- Week 12:
+   Deploying Frontend on AWS,Advanced TS API,Actionable Docker,Deploy npm Package,
+   Monorepos ,   SQL & JOINS ,Prisma recap,Connection Pooling in serverless envs   
 
-### Cohort 1-100 Contents 🚀
+### Cohort 1-100 Complete 🚀
  
  ---
   
