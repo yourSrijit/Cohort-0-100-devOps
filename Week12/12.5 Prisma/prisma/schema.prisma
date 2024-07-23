@@ -1,0 +1,10 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgres://shziusmr:DUCC11Xwk4Dk3TdKzs1xUzWEBOiyDYm6@isabelle.db.elephantsql.com/shziusmr"
+}
+`
