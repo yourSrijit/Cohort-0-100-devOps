@@ -5,6 +5,23 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://shziusmr:DUCC11Xwk4Dk3TdKzs1xUzWEBOiyDYm6@isabelle.db.elephantsql.com/shziusmr"
+  url      = "postgresql://neondb_owner:UjqE5BmDd6Yo@ep-withered-pond-a53lbozz.us-east-2.aws.neon.tech/neondb?sslmode=require"
 }
-`
+
+//User table
+model User {
+  id         Int      @id @default(autoincrement())
+  username   String   @unique
+  password   String
+  firstName  String
+  lastName   String
+}
+
+// Todo Table
+model Todo{
+  id            Int @id @default(autoincrement())
+  title         String
+  description   String
+  done          Boolean @default(false)
+  user_id       Int
+}
