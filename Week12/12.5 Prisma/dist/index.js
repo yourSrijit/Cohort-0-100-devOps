@@ -20,8 +20,27 @@ const insertData = (username, password, firstName, lastName) => __awaiter(void 0
             lastName
         }
     });
+    // await prisma.user.deleteMany({});
     console.log("Data insertion successful: ", res);
     const display = yield prisma.user.findMany({});
     console.log(display);
 });
-insertData("yourSrijit3", "Srijit123", "Srijit", "Bera");
+const createTodo = (title, description, user_id) => __awaiter(void 0, void 0, void 0, function* () {
+    const res = yield prisma.todo.create({
+        data: {
+            title,
+            description,
+            user_id
+        }
+    });
+    console.log("Todo insertion successfully");
+});
+const getTodo = (user_id) => __awaiter(void 0, void 0, void 0, function* () {
+    const res = yield prisma.todo.findMany({
+        where: {
+            user_id
+        }
+    });
+});
+insertData("yourSrijit", "Srijit123", "Srijit", "Bera");
+createTodo("Gym", "I have to go for gyme", 1);
