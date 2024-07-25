@@ -18,7 +18,7 @@ const insertData = async (username: string, password: string, firstName: string,
     const display=await prisma.user.findMany({})
     console.log(display);
     
-}
+} 
 
 const createTodo=async(title:string ,description:string,user_id:number)=>{
     const res=await prisma.todo.create({
