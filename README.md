@@ -25,7 +25,10 @@
    Serverless Backend, AWS
 - Week 12:
    Deploying Frontend on AWS,Advanced TS API,Actionable Docker,Deploy npm Package,
-   Monorepos ,   SQL & JOINS ,Prisma recap,Connection Pooling in serverless envs   
+   Monorepos ,SQL & JOINS ,Prisma recap,Connection Pooling in serverless envs   
+- Week 13:
+   Medium blogging full stack project using hono framwork ,prisma ,connection pooling ,cloudflare   backend + frontend
+
 
 ### Cohort 1-100 Complete 🚀
  
