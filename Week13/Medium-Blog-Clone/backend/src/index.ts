@@ -14,6 +14,11 @@ const app = new Hono<{
 	}
 }>();
 
+app.get('/',(C)=>{
+  return C.text("Hi Srijit")  
+})
+
+
 
 app.route('/api/v1/user',userRouter)
 app.route('/api/v1/blog',blogRouter)
