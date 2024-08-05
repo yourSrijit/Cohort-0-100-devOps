@@ -1,4 +1,3 @@
-
 import express from "express";
 import mongoose from "mongoose";
 const app = express();
@@ -14,7 +13,7 @@ app.use("/auth", authRoutes);
 app.use("/todo", todoRoutes);
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Server is running on port ${port}`)
 })
 
 mongoose.connect('mongodb://localhost:27017/courses', { dbName: "courses" });
