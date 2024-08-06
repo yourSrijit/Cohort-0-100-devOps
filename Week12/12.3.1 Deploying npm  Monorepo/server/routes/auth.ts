@@ -3,19 +3,22 @@ import express from 'express';
 import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
 
+import { signupInput } from "@100xdevs/common";
 
 const router = express.Router();
 
 router.post('/signup', async (req, res) => {
    
- const parseResponse=signupInput.safeParse(req.body);
- if(!parseResponse.success){
+ const parsedInput=signupInput.safeParse(req.body);
+ if(!parsedInput.success){
   return res.status(411).json({
     msg:"Give better inputs"
   })
  }
-    
-    const user = await User.findOne({ username: parsedInput.data.username });
+
+ const username=parsedInput.data.username;    
+ const password=parsedInput.data.password;
+    const user = await User.findOne({ username});
     if (user) {
       res.status(403).json({ message: 'User already exists' });
     } else {
