@@ -2,22 +2,29 @@ import React, { useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
 import {useSetRecoilState} from "recoil";
 import {authState} from "../store/authState.js";
+import { signupParam } from '@yoursrijit/common';
 
 const Signup = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
-    const handleSignup = async () => {
+
+    let Inputs :signupParam={
+        username,
+        password
+    }
+    const handleSignup = async () => { 
         const response = await fetch('http://localhost:3000/auth/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username, password })
+            body: JSON.stringify(Inputs)
         });
         // Todo: Create a type for the response that you get back from the server
         const data = await response.json();
         if (data.token) {
             localStorage.setItem("token", data.token)
-            window.location = "/todos";
+            navigate("/todos")
         } else {
             alert("Error while signing up");
         }
