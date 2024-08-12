@@ -28,6 +28,9 @@
    Monorepos ,SQL & JOINS ,Prisma recap,Connection Pooling in serverless envs   
 - Week 13:
    Medium blogging full stack project using hono framwork ,prisma ,connection pooling ,cloudflare   backend + frontend
+- Week 14: 
+   Hi srijit
+
 
 
 ### Cohort 1-100 Complete 🚀
