@@ -8,4 +8,3 @@ We’ll be building medium in the following stack
 - Prisma as the ORM, with connection pooling
 - Postgres as the database
 - jwt for authentication
- 
