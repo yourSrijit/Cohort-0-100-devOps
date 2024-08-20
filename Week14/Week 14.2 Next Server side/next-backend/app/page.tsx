@@ -10,7 +10,7 @@ async function getUserDetails() {
 
 export default async function Home() {
   const userDetails=await getUserDetails(); // you can use async await only in server component.
-  console.log(userDetails);
+  // console.log(userDetails);
     
   return (
     <div className="flex min-h-screen justify-center items-center flex-col">

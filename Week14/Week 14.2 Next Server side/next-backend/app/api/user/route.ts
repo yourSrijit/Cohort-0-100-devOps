@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { NextRequest } from "next/server"
 
-//@ts-ignore
+//@tsclear-ignore
 const client=new PrismaClient();
 
 export async function GET(){
@@ -11,6 +11,7 @@ export async function GET(){
         data
     })
 }
+
  
 export async function POST(req:NextRequest){
     //extract the username,password from the body
@@ -29,3 +30,8 @@ export async function POST(req:NextRequest){
         message:"You are logged in successfully"
     })
 }
+
+// export async function POST(){
+//     await client.user.deleteMany({});
+//     return Response.json({message:"Deleted all"})
+// }
