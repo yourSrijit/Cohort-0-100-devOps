@@ -1,17 +1,14 @@
-import axios from "axios";
-import Link from "next/link";
+import client from "../db"
 
 async function getUserDetails() {
   await new Promise((r)=> setTimeout(r,1000));
-  const response = await axios.get("http://localhost:3000/api/user")
-    
-	return response.data;
+  const data=await client.user.findFirst({})
+  return data;
 }
 
 export default async function Home() {
   const userDetails=await getUserDetails(); // you can use async await only in server component.
-  // console.log(userDetails);
-    
+      
   return (
     <div className="flex min-h-screen justify-center items-center flex-col">
       <div className="card card-side bg-base-100 shadow-xl">
@@ -21,8 +18,8 @@ export default async function Home() {
             alt="Movie" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{userDetails?.data?.username}</h2>
-          <p>{userDetails?.data?.password}</p>
+          <h2 className="card-title">{userDetails?.username}</h2>
+          <p>{userDetails?.password}</p>
           
         </div>
     </div>

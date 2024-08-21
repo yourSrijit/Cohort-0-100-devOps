@@ -1,8 +1,6 @@
-import { PrismaClient } from "@prisma/client";
-import { NextRequest } from "next/server"
+import client from "../../../db"
+import { NextRequest } from "next/server";
 
-//@tsclear-ignore
-const client=new PrismaClient();
 
 export async function GET(){
     //databse logic
