@@ -7,7 +7,7 @@ localhost on a docker container means it's own network and not the network of th
 - Bridge: The default network driver for containers. When you run a container without specifying a network, it's attached to a bridge network. It provides a private internal network on the host machine, and containers on the same bridge network can communicate with each other.
 - Host: Removes network isolation between the container and the Docker host, and uses the host's networking directly. This is useful for services that need to handle lots of traffic or need to expose many ports.
 
-### 1.Create a image of this current of this project
+### 1. Create a image of this current of this project
 `
 docker build -t node_app .
 `
@@ -28,7 +28,7 @@ You have to change the localhost with the mongo container name and now run the p
 `
 docker run -d -p 3000:3000 --network my_network node_app 
 `
-Now do operation using ppostman on post 3000 .Try to insert data into db and get users..Enjoy
+Now do operation using postman on post 3000 .Try to insert data into db and get users..Enjoy
 on port `http://localhost:3000/user` try to add some data and get log like this 
 ```
 {
@@ -42,4 +42,4 @@ on port `http://localhost:3000/user` try to add some data and get log like this
     }
 }
 ```
-Also get the data `/users/` route
+Also get the data from  `/users/` route
