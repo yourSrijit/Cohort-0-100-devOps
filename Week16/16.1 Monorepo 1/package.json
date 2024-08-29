@@ -1,5 +1,5 @@
 {
-  "name": "16.1 Monorepo 1",
+  "name": "project",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -8,14 +8,15 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "prettier": "^3.2.5",
-    "turbo": "^2.1.0",
-    "typescript": "^5.4.5"
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "npm@10.8.2",
+  "packageManager": "npm@7.24.2",
   "workspaces": [
     "apps/*",
     "packages/*"
