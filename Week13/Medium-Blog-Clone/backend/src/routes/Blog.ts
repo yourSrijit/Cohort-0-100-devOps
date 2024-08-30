@@ -3,6 +3,7 @@ import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
 import { verify } from 'hono/jwt'
 import {getCookie} from 'hono/cookie'
+import { createBlogInput, updateBlogInput } from '@yoursrijit/medium-common';
 
 const blogRouter = new Hono<{
 	Bindings:{
@@ -22,19 +23,26 @@ blogRouter.use('/*',async(c,next)=>{
 	//if not we return the user a 403 status code
 // const header= c.req.header("Authorization") || "";
 // 	console.log(header)
-	const header=getCookie(c,"jwtToken");
-	const token=header.split(" ")[1];
-
-const response=await verify(token,c.env.JWT_SECRET)
-		if(response){
+	try{
+			const header=getCookie(c,"jwtToken");
 			//@ts-ignore
-			c.set("userId",response.id);
-			await next();
-		}
-		else{
-			c.status(403);
-			return c.json({error :"User is not authorized"})
-		}
+			const token=header.split(" ")[1];
+
+		const response=await verify(token,c.env.JWT_SECRET)
+				if(response){
+					//@ts-ignore
+					c.set("userId",response.id);
+					await next();
+				}
+				else{
+					c.status(403);
+					return c.json({message :"User is not authorized"})
+				}
+	}catch(error){
+		c.status(403);
+		return c.json({message :"You need to login first"})
+	}
+
 })
 
 
@@ -45,6 +53,11 @@ blogRouter.post('/', async(c) => {
 	}).$extends(withAccelerate())
 
 	const body=await c.req.json();
+	const {success} =createBlogInput.safeParse(body);
+	if(!success){
+		c.status(411);
+		return c.json({message:"Inputs are not correct"})
+	}
 	const authorId=c.get("userId");
 	try{
 		const blog=await prisma.post.create({
@@ -73,10 +86,17 @@ blogRouter.put('/', async(c) => {
 	}).$extends(withAccelerate())
 
 	const body=await c.req.json();
+	const {success} =updateBlogInput.safeParse(body);
+	if(!success){
+		c.status(411);
+		return c.json({message:"Inputs are not correct"});
+	}
+	const authorId=c.get("userId");
 	try{
 		const blog=await prisma.post.update({
 			where:{
-				id:body.id
+				id:body.id,
+				authorId
 			},
 			data:{
 			   title:body.title,
@@ -85,11 +105,11 @@ blogRouter.put('/', async(c) => {
 		})
 
 		if(blog){
-			return c.json({id: blog.id})
+			return c.json({id: blog.id,message:"Blog updated successfully"})
 		}
 
 	}catch(error){
-		return c.json({error})
+		return c.json({message:"Some error occured in updating blog"})
 	} 
 })
 //Routes for get all the posts  || Pagination
