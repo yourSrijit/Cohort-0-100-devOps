@@ -30,7 +30,10 @@
    Medium blogging full stack project using hono framwork ,prisma ,connection pooling ,cloudflare   backend + frontend
 - Week 14: 
    Next Js client & Server side,Data fetching
-    
+- Week 15:
+   Docker Intro , Docker Pudh ,Port mapping , Compose, Network ,Volume ,Bind Mount 
+-Week 16:
+   Monorepo uisng Turbo repo    
 
 
 
