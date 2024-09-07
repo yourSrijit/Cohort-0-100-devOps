@@ -33,7 +33,7 @@
 - Week 15:
    Docker Intro , Docker Pudh ,Port mapping , Compose, Network ,Volume ,Bind Mount 
 -Week 16:
-   Monorepo uisng Turbo repo     
+   Monorepo uisng Turbo repo  
 
 
 
