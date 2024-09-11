@@ -11,11 +11,14 @@ const handler=NextAuth({
             },
             async authorize(credentials:any){
                 return {
-                    id:"user1"
+                    id:"user1",
+                    name:"Srijit",
+                    description:"Full Stack Dev",
                 };
             },
         })
-    ]
+    ],
+    secret:process.env.NEXTAUTH_SECRET
 });
 
 
