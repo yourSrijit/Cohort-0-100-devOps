@@ -112,7 +112,7 @@ yarn add next-auth
      );
    };
 
-   export default SignInPage;
+   export default SignInPage; 
    ```
 
 3. **Protecting Pages (Securing Routes)**
