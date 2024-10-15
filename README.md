@@ -1,4 +1,4 @@
-# Cohort 0-100 devOps 2.0
+5th# Cohort 0-100 devOps 2.0
 
 ### Cohort 0-1 Complete 🚀
 - Week 1 :
@@ -123,3 +123,4 @@
 1. Zerodha end to end
 2. Zapier end to end
 3. Real-world open source projects
+
